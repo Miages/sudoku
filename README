@@ -1,1 +1,13 @@
-Grille de sudoku
+Solveur de SUDOKU
+
+Introduction
+
+Il s'agit ici du programme d'implémentation pour résoudre une grille de sudoku.
+
+Ce programme est composé de Trois Fichiers à savoir:
+
+Grille.java qui contient les signatures des différentes méthodes utilisées.
+
+GrilleImpltest.java qui contient les test d'implémentations de  la grille.
+
+GrilleImpl.java qui contient l'implémentation de la grille de sudoku.
