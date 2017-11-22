@@ -53,7 +53,7 @@ public interface Grille {
      * @param y position y dans la grille
      * @param value valeur a mettre dans la case
      * @Throw IllegalArgumentException si x ou y sont hors bornes (0-8)
-     * @Throw IllegalArgumentException si value n'est pas un caractère autorise ('1',...,'9',..)
+     * @Throw IllegalArgumentException si value n'est pas un caractère autorise ('1',...,'9',...)
      */
     public boolean possible(int x, int y, char value) throws IllegalArgumentException;
 }
