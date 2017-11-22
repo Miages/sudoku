@@ -31,7 +31,29 @@ public interface Grille {
      * 
      */
     public void setvalue(int x, int y, char value) throws IllegalArgumentException;
-    public int getvalue(int x, int y) throws IllegalArgumentException;
+    /*
+     * Recupere une valeur de la grille 
+     * 
+     * @param x position x dans la grille
+     * @param y position y dans la grille 
+     * @return valeur dans la case x,y
+     * @throw IllegalArgumentException si x ou y sont hors bornes (0-8)
+     */
+    public char getvalue(int x, int y) throws IllegalArgumentException;
+    /*
+     * Test si une grille est terminée
+     * 
+     * @return true si la grille est complete
+     */
     public boolean complete();
+    /*
+     * Test si une valeur est possible dans la grille par rapport a ce qu'elle contient déjà 
+     *
+     * @param x position x dans la grille 
+     * @param y position y dans la grille
+     * @param value valeur a mettre dans la case
+     * @Throw IllegalArgumentException si x ou y sont hors bornes (0-8)
+     * @Throw IllegalArgumentException si value n'est pas un caractère autorise ('1',...,'9',..)
+     */
     public boolean possible(int x, int y, char value) throws IllegalArgumentException;
 }
